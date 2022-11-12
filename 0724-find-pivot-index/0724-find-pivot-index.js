@@ -3,14 +3,11 @@
 const pivotIndex = function(nums) {
     let total = nums.reduce((a, b) => a + b);
     let leftSum = 0;
-    let pivot = 0;
     
-    for(var i = 0; i < nums.length; i++){
-        pivot = i;
-        total -= nums[i];
-        if(total == leftSum)
-            return pivot;
-        leftSum += nums[i];
+    for(var p = 0; p < nums.length; p++){
+        total -= nums[p];
+        if(total == leftSum) return p;
+        leftSum += nums[p];
     }
     return -1;
 };
