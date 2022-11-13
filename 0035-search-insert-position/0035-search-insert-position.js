@@ -9,7 +9,8 @@ var searchInsert = function(nums, target) {
     if(output === -1){
         nums.push(target);
         // nums.sort();
-        nums.sort((a, b) => a - b);
+        nums.sort((a, b) => a - b);  // 오름차순 정렬
+        // nums.sort((a,b)=> (a>b?-1:1));  // 내림차순
         output = nums.indexOf(target);
     }
     return output;
