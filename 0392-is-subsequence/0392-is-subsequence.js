@@ -1,8 +1,4 @@
-/**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
- */
+// pointer 2개
 var isSubsequence = function(s, t) {
     let j = 0;
     for(let i = 0; i < t.length && j < s.length; i++)
