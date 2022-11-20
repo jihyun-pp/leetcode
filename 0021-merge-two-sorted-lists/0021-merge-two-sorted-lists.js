@@ -22,3 +22,5 @@ const mergeTwoLists = function(list1, list2) {
         return list2;
     }
 };
+
+// 두 리스트의 head를 비교하고, 둘 중 큰 head를 작은 head의 next로 연결
